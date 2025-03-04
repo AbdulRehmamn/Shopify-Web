@@ -28,19 +28,20 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Hamburger Menu (visible below lg) */}
+      {/* Hamburger/Close Menu (visible below lg, on the right side) */}
       <div className="flex">
         <button
           onClick={(e) => {
             e.stopPropagation();
             setIsOpen(!isOpen);
           }}
+          className="md:hidden"
         >
-          <i
-            className={`ri-${
-              isOpen ? "close-line md:hidden" : "menu-line md:hidden"
-            } text-2xl`}
-          ></i>
+          <img
+            src={isOpen ? "close.png" : "Hamburger.png"} // Toggle between hamburger and close icons
+            alt={isOpen ? "Close Menu" : "Hamburger Menu"}
+            className="w-6 h-6 invert" // `invert` makes it white against the dark background
+          />
         </button>
       </div>
 
