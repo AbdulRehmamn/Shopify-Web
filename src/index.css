@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body {
+  @apply bg-black text-white; /* Applies black background and white text */
+  
+}
+@theme{
+  ---breakpoint-*: initial;
+  --breakpoint-xxl: 1440px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 881px;
+  --breakpoint-md: 769px;
+  --breakpoint-sm: 576px;  
+
+
+}
